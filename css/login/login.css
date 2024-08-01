@@ -36,10 +36,8 @@ li {
   margin: 0;
 }
 body {
-  /* 320px 이하로 줄어들었을때 레이아웃 유지시키기 */
   display: flex;
   flex-direction: column;
-  align-content: center;
 }
 
 .loginpage {
