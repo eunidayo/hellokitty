@@ -36,7 +36,8 @@
           <div class="txt 01"><a href="#">CHARACTER</a></div>
           <div class="txt 02"><a href="#">PLACE</a></div>
           <div class="txt 03"><a href="#">EVENT</a></div>
-          <figure><img src="/hellokitty/image/main/header.png" alt="헬로키티"></figure>
+          <figure><a href="/hellokitty/html/main.html"><img src="/hellokitty/image/main/header.png" alt="헬로키티"></a>
+          </figure>
         </div>
 
       </div>
@@ -54,18 +55,94 @@
 
     <section class="sec01">
       <div class="inner">
-
+        <!-- 자동 캐러셀 시작 -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/hellokitty/image/main/sec01/sec01-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="/hellokitty/image/main/sec01/sec01-2.png" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="/hellokitty/image/main/sec01/sec01-4.png" alt=""></div> -->
+            <!-- <div class="swiper-slide"><img src="/waterbomb_project/image/main/jpark.PNG" alt=""></div>
+            <div class="swiper-slide"><img src="/waterbomb_project/image/main/watergun.PNG" alt=""></div> -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
+        </div>
+        <!-- 자동 캐러셀 끝 -->
       </div>
     </section>
-    <section class="sec02">
 
+
+
+    <section class="sec02">
+      <div class="container">
+        <div class="txtBox">
+          <span class="fw-bold">"당신을 위한 HELLOKITTY의 특별한 메시지"</span>
+          <p class="fw-bold">행복한 하루를 기대하며 돌려보세요 -!</p>
+        </div>
+
+        <div id="wheel" class="wheel">
+          <div class="segment" data-value="1">1</div>
+          <div class="segment" data-value="2">2</div>
+          <div class="segment" data-value="3">3</div>
+          <div class="segment" data-value="4">4</div>
+          <div class="segment" data-value="5">5</div>
+          <div class="segment" data-value="6">6</div>
+          <div class="segment" data-value="7">7</div>
+          <div class="segment" data-value="8">8</div>
+        </div>
+        <button id="spinButton" class="button">GO</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <img id="kittyImage" src="" alt="헬로키티 이미지">
+            <h2 id="modalTitle">타이틀</h2>
+            <p id="modalText">내용</p>
+            <button id="closeButton" class="close-button">닫기</button>
+          </div>
+        </div>
+      </div>
+
+
+      <a href="#"><img src="/hellokitty/image/main/hellokittyBtn.svg" alt="kittyBtn "
+          class="animate__animated  animate__pulse animate__infinite animate__delay-1s kittyBtn">
+      </a>
+      <i class="fa-solid fa-circle-arrow-up fa-2x"></i>
     </section>
+
+
+
     <section class="sec03">
 
       <button> <span>PLACE MORE</span> <span class="material-symbols-outlined">
           arrow_forward_ios
         </span> </button>
     </section>
+
+    <!-- 
+    <section class="sec04">
+      <div id="container">
+        <img id="draggableImage" src="/hellokitty/image/main/header.png" alt="드래그할 이미지" class="draggable">
+      </div>
+
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,8 +165,16 @@
     crossorigin="anonymous"></script>
   <!-- swiper.js 임포트 -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/waterbomb_project/js/smooth_scroll_to_top.js"></script>
-  <script src="/waterbomb_project/js/main_carousel.js"></script>
+
+  <!-- sec01 캐러셀 -->
+  <script src="/hellokitty/js/main.sec01.js"></script>
+  <!-- sec02 돌림판, 카드 -->
+  <script src="/hellokitty/js/main.js"></script>
+  <!-- sec02 scroll to top -->
+  <script src="/hellokitty/js/main.scroll_to_top.js"></script>
+  <!-- sec04  -->
+  <script src="/hellokitty/js/main.sec04.js"></script>
+
 </body>
 
 </html>
