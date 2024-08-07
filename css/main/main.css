@@ -152,7 +152,7 @@ header .inner .txtBox a {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #fff2f2;
+  background-color: #fff8f8;
 }
 .sec02 .container {
   text-align: center;
@@ -275,7 +275,7 @@ header .inner .txtBox a {
 
 
 .fa-circle-arrow-up {
-  color: white;
+  color: #e9ecef;
   position: fixed;
   right: 40px;
   bottom: 90px;
@@ -297,24 +297,24 @@ header .inner .txtBox a {
   width: 100%;
   height: 510px;
   display: flex;
-  background: url(/hellokitty/image/main/sec03.png) lightgray 0px 0px / 100% 100% no-repeat;
+  background: url(/hellokitty/image/main/sec03-1.png) lightgray 0px 0px / 100% 100% no-repeat;
   align-items: flex-start;
   justify-content: center;
   padding: 60px;
 }
 .sec03 button {
   display: flex;
-  width: 295px;
-  height: 70px;
-  padding: 20px 25px;
+  width: 190px;
+  height: 45px;
+  padding: 0px 15px;
   justify-content: end;
   align-items: center;
   border-radius: 20px;
-  border: 3px solid #e1e1e1;
+  border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-size: 26px;
-  color: #949494;
-  background: #fff;
+  /* font-size: 22px; */
+  color: #ffffff;
+  background: none;
   font-weight: 500;
   position: relative;
 }
@@ -331,26 +331,57 @@ a {
 }
 
 
-/* 
-.sec04 {
-  width: 100%;
-  height: 775px;
-  background: url(/hellokitty/image/main/sec04/sec04-1.png) rgb(255, 255, 255) 0px 0px / 100% 100% no-repeat;
+
+
+
+
+footer {
+  padding: 20px;
 }
 
-.draggable {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  cursor: move;
-  left: 50px;
-  top: 50px;
+.footer-content {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  padding: 20px;
+  gap: 100px;
 }
 
-#container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-color: #f0f0f0;
-  overflow: hidden;
+/* .footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
 } */
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #e1e1e1;
+}
